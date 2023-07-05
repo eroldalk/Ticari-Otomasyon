@@ -16,5 +16,7 @@ namespace Ticaret_Otomasyon
         {
             InitializeComponent();
         }
+
+        
     }
 }
