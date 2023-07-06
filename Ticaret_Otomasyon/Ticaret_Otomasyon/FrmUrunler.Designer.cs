@@ -126,7 +126,7 @@
             // 
             this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGuncelle.Appearance.Options.UseFont = true;
-            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
             this.BtnGuncelle.Location = new System.Drawing.Point(91, 462);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(189, 33);
@@ -137,7 +137,7 @@
             // 
             this.Btnsil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Btnsil.Appearance.Options.UseFont = true;
-            this.Btnsil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.Btnsil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btnsil.ImageOptions.Image")));
             this.Btnsil.Location = new System.Drawing.Point(91, 423);
             this.Btnsil.Name = "Btnsil";
             this.Btnsil.Size = new System.Drawing.Size(189, 33);
@@ -154,6 +154,7 @@
             this.Btnkaydet.Size = new System.Drawing.Size(189, 33);
             this.Btnkaydet.TabIndex = 21;
             this.Btnkaydet.Text = "Kaydet";
+            this.Btnkaydet.Click += new System.EventHandler(this.Btnkaydet_Click);
             // 
             // richtxtdetay
             // 
@@ -334,6 +335,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmUrunler";
             this.Text = "FrmUrunler";
+            this.Load += new System.EventHandler(this.FrmUrunler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
