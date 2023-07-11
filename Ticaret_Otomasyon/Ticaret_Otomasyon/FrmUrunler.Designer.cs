@@ -68,10 +68,10 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.Location = new System.Drawing.Point(1, 1);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(723, 561);
+            this.gridControl1.Size = new System.Drawing.Size(1579, 1062);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -84,6 +84,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.groupControl1.Controls.Add(this.BtnGuncelle);
             this.groupControl1.Controls.Add(this.Btnsil);
             this.groupControl1.Controls.Add(this.Btnkaydet);
@@ -105,9 +106,9 @@
             this.groupControl1.Controls.Add(this.msktxtyil);
             this.groupControl1.Controls.Add(this.txtid);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(729, 0);
+            this.groupControl1.Location = new System.Drawing.Point(1586, 1);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(293, 561);
+            this.groupControl1.Size = new System.Drawing.Size(338, 1062);
             this.groupControl1.TabIndex = 1;
             // 
             // BtnGuncelle
@@ -325,11 +326,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 561);
+            this.ClientSize = new System.Drawing.Size(1924, 1061);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmUrunler";
-            this.Text = "FrmUrunler";
+            this.Text = "ÜRÜNLER";
             this.Load += new System.EventHandler(this.FrmUrunler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
