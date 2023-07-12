@@ -93,3 +93,10 @@ C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmUrunler.resources
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmAnaModul.resources
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmMusteriler.resources
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmFirmalar.resources
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\DevExpress.Dialogs.v22.1.Core.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\DevExpress.XtraDialogs.v22.1.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\DevExpress.XtraDialogs.v22.1.xml
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\de\DevExpress.Dialogs.v22.1.Core.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\es\DevExpress.Dialogs.v22.1.Core.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\ja\DevExpress.Dialogs.v22.1.Core.resources.dll
