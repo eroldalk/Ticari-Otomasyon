@@ -382,6 +382,9 @@
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
@@ -420,7 +423,7 @@
             this.groupControl4.Controls.Add(this.Msktel1);
             this.groupControl4.Controls.Add(this.txtmail);
             this.groupControl4.Controls.Add(this.labelControl10);
-            this.groupControl4.Location = new System.Drawing.Point(19, 244);
+            this.groupControl4.Location = new System.Drawing.Point(10, 122);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.ShowCaption = false;
             this.groupControl4.Size = new System.Drawing.Size(134, 94);
@@ -474,7 +477,7 @@
             this.groupControl2.Controls.Add(this.labelControl2);
             this.groupControl2.Controls.Add(this.txtsektor);
             this.groupControl2.Controls.Add(this.labelControl4);
-            this.groupControl2.Location = new System.Drawing.Point(19, 20);
+            this.groupControl2.Location = new System.Drawing.Point(10, 10);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.ShowCaption = false;
             this.groupControl2.Size = new System.Drawing.Size(130, 51);
@@ -490,7 +493,7 @@
             this.groupControl3.Controls.Add(this.txtyetkili);
             this.groupControl3.Controls.Add(this.labelControl13);
             this.groupControl3.Controls.Add(this.labelControl9);
-            this.groupControl3.Location = new System.Drawing.Point(19, 131);
+            this.groupControl3.Location = new System.Drawing.Point(10, 66);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.ShowCaption = false;
             this.groupControl3.Size = new System.Drawing.Size(130, 53);
@@ -568,7 +571,7 @@
             // 
             this.btntemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btntemizle.Appearance.Options.UseFont = true;
-            this.btntemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btntemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btntemizle.ImageOptions.Image")));
             this.btntemizle.Location = new System.Drawing.Point(109, 403);
             this.btntemizle.Name = "btntemizle";
             this.btntemizle.Size = new System.Drawing.Size(195, 38);
@@ -674,10 +677,10 @@
             this.groupControl6.Controls.Add(this.labelControl17);
             this.groupControl6.Controls.Add(this.txtkod3);
             this.groupControl6.Controls.Add(this.labelControl18);
-            this.groupControl6.Location = new System.Drawing.Point(16, 12);
+            this.groupControl6.Location = new System.Drawing.Point(8, 6);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.ShowCaption = false;
-            this.groupControl6.Size = new System.Drawing.Size(274, 122);
+            this.groupControl6.Size = new System.Drawing.Size(137, 61);
             this.groupControl6.TabIndex = 0;
             this.groupControl6.Text = "groupControl6";
             // 

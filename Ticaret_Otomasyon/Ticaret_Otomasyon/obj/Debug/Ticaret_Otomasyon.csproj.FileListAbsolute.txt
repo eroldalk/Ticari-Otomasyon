@@ -101,3 +101,5 @@ C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\es\DevExpress.Dialogs.v22.1.Core.resources.dll
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\ja\DevExpress.Dialogs.v22.1.Core.resources.dll
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmPersonel.resources
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmRehber.resources
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmMail.resources
