@@ -79,6 +79,7 @@
             this.Btntemizle.Size = new System.Drawing.Size(172, 33);
             this.Btntemizle.TabIndex = 32;
             this.Btntemizle.Text = "Temizle";
+            this.Btntemizle.Click += new System.EventHandler(this.Btntemizle_Click);
             // 
             // groupControl1
             // 
@@ -216,6 +217,7 @@
             this.BtnGuncelle.Size = new System.Drawing.Size(172, 33);
             this.BtnGuncelle.TabIndex = 23;
             this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // Btnsil
             // 
@@ -227,6 +229,7 @@
             this.Btnsil.Size = new System.Drawing.Size(172, 33);
             this.Btnsil.TabIndex = 22;
             this.Btnsil.Text = "SİL";
+            this.Btnsil.Click += new System.EventHandler(this.Btnsil_Click);
             // 
             // Btnkaydet
             // 
@@ -238,6 +241,7 @@
             this.Btnkaydet.Size = new System.Drawing.Size(172, 33);
             this.Btnkaydet.TabIndex = 21;
             this.Btnkaydet.Text = "Kaydet";
+            this.Btnkaydet.Click += new System.EventHandler(this.Btnkaydet_Click);
             // 
             // rchnot
             // 
@@ -353,6 +357,7 @@
             this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // txtelektrik
             // 

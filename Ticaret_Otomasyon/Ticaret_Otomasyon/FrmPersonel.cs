@@ -122,7 +122,7 @@ namespace Ticaret_Otomasyon
         {
 
             DialogResult delete = new DialogResult();
-            delete = MessageBox.Show("Personel Kaydınız Sileceksiniz. Emin Misiniz?", "Müşteri Kaydı Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            delete = MessageBox.Show("Personel Kaydınız Sileceksiniz. Emin Misiniz?", "Personel Kaydı Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (delete == DialogResult.Yes)
             {
                 SqlCommand komut = new SqlCommand("Delete From TBL_PERSONELLER where ID=@p1", bgl.baglanti());

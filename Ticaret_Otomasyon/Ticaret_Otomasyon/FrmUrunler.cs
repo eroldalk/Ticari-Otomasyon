@@ -91,7 +91,7 @@ namespace Ticaret_Otomasyon
             komut.Parameters.AddWithValue("@p6", decimal.Parse(txtalis.Text));
             komut.Parameters.AddWithValue("@p7", decimal.Parse(txtsatis.Text));
             komut.Parameters.AddWithValue("@p8", richtxtdetay.Text);
-            komut.Parameters.Add("@p9", txtid.Text);
+            komut.Parameters.AddWithValue("@p9", txtid.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Ürün Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);

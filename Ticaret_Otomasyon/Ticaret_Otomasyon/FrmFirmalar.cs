@@ -156,7 +156,7 @@ namespace Ticaret_Otomasyon
         private void Btnsil_Click(object sender, EventArgs e)
         {
             DialogResult delete = new DialogResult();
-            delete = MessageBox.Show("Müşteri Kaydınız Sileceksiniz. Emin Misiniz?", "Müşteri Kaydı Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            delete = MessageBox.Show("Firma Kaydınız Sileceksiniz. Emin Misiniz?", "Firma Kaydı Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (delete == DialogResult.Yes)
             {
                 SqlCommand komut = new SqlCommand("Delete From TBL_FIRMALAR where ID=@p1", bgl.baglanti());
