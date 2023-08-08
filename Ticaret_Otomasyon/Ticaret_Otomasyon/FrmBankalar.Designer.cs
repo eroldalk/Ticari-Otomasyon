@@ -106,16 +106,15 @@
             this.Cmbil.Name = "Cmbil";
             this.Cmbil.Size = new System.Drawing.Size(169, 26);
             this.Cmbil.TabIndex = 30;
+            this.Cmbil.SelectedIndexChanged += new System.EventHandler(this.Cmbil_SelectedIndexChanged);
             // 
             // mskyetkili
             // 
             this.mskyetkili.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mskyetkili.Location = new System.Drawing.Point(117, 258);
-            this.mskyetkili.Mask = "00000000000";
             this.mskyetkili.Name = "mskyetkili";
             this.mskyetkili.Size = new System.Drawing.Size(169, 26);
             this.mskyetkili.TabIndex = 29;
-            this.mskyetkili.ValidatingType = typeof(int);
             // 
             // mskiban
             // 
@@ -176,6 +175,7 @@
             this.Btnkaydet.Size = new System.Drawing.Size(172, 33);
             this.Btnkaydet.TabIndex = 21;
             this.Btnkaydet.Text = "Kaydet";
+            this.Btnkaydet.Click += new System.EventHandler(this.Btnkaydet_Click);
             // 
             // labelControl10
             // 
@@ -354,7 +354,7 @@
             // 
             this.btntemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btntemizle.Appearance.Options.UseFont = true;
-            this.btntemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btntemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btntemizle.ImageOptions.Image")));
             this.btntemizle.Location = new System.Drawing.Point(113, 556);
             this.btntemizle.Name = "btntemizle";
             this.btntemizle.Size = new System.Drawing.Size(172, 33);
@@ -365,11 +365,11 @@
             // 
             this.msktarih.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.msktarih.Location = new System.Drawing.Point(116, 324);
-            this.msktarih.Mask = "00000000000";
+            this.msktarih.Mask = "00.00.0000";
             this.msktarih.Name = "msktarih";
             this.msktarih.Size = new System.Drawing.Size(169, 26);
             this.msktarih.TabIndex = 35;
-            this.msktarih.ValidatingType = typeof(int);
+            this.msktarih.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl13
             // 
