@@ -36,7 +36,6 @@
             this.mskyetkili = new System.Windows.Forms.MaskedTextBox();
             this.mskiban = new System.Windows.Forms.MaskedTextBox();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtfirma = new DevExpress.XtraEditors.TextEdit();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.Btnsil = new DevExpress.XtraEditors.SimpleButton();
             this.Btnkaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -55,6 +54,7 @@
             this.txtid = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             this.btntemizle = new DevExpress.XtraEditors.SimpleButton();
             this.msktarih = new System.Windows.Forms.MaskedTextBox();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
@@ -62,13 +62,13 @@
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtfirma.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txttur.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsube.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbankaad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtid.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridView1
@@ -78,6 +78,7 @@
             this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // gridControl1
             // 
@@ -134,15 +135,6 @@
             this.labelControl5.TabIndex = 27;
             this.labelControl5.Text = "Firma :";
             // 
-            // txtfirma
-            // 
-            this.txtfirma.Location = new System.Drawing.Point(116, 386);
-            this.txtfirma.Name = "txtfirma";
-            this.txtfirma.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtfirma.Properties.Appearance.Options.UseFont = true;
-            this.txtfirma.Size = new System.Drawing.Size(169, 24);
-            this.txtfirma.TabIndex = 25;
-            // 
             // BtnGuncelle
             // 
             this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -153,6 +145,7 @@
             this.BtnGuncelle.Size = new System.Drawing.Size(172, 33);
             this.BtnGuncelle.TabIndex = 23;
             this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // Btnsil
             // 
@@ -164,6 +157,7 @@
             this.Btnsil.Size = new System.Drawing.Size(172, 33);
             this.Btnsil.TabIndex = 22;
             this.Btnsil.Text = "SİL";
+            this.Btnsil.Click += new System.EventHandler(this.Btnsil_Click);
             // 
             // Btnkaydet
             // 
@@ -316,6 +310,7 @@
             // 
             this.groupControl1.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.groupControl1.Appearance.Options.UseBackColor = true;
+            this.groupControl1.Controls.Add(this.lookUpEdit1);
             this.groupControl1.Controls.Add(this.btntemizle);
             this.groupControl1.Controls.Add(this.msktarih);
             this.groupControl1.Controls.Add(this.labelControl13);
@@ -326,7 +321,6 @@
             this.groupControl1.Controls.Add(this.mskyetkili);
             this.groupControl1.Controls.Add(this.mskiban);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.txtfirma);
             this.groupControl1.Controls.Add(this.BtnGuncelle);
             this.groupControl1.Controls.Add(this.Btnsil);
             this.groupControl1.Controls.Add(this.Btnkaydet);
@@ -350,6 +344,18 @@
             this.groupControl1.Size = new System.Drawing.Size(337, 1070);
             this.groupControl1.TabIndex = 5;
             // 
+            // lookUpEdit1
+            // 
+            this.lookUpEdit1.Location = new System.Drawing.Point(117, 386);
+            this.lookUpEdit1.Name = "lookUpEdit1";
+            this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
+            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEdit1.Properties.NullText = "LÜTFEN SEÇİNİZ";
+            this.lookUpEdit1.Size = new System.Drawing.Size(168, 24);
+            this.lookUpEdit1.TabIndex = 37;
+            // 
             // btntemizle
             // 
             this.btntemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -360,6 +366,7 @@
             this.btntemizle.Size = new System.Drawing.Size(172, 33);
             this.btntemizle.TabIndex = 36;
             this.btntemizle.Text = "TEMİZLE";
+            this.btntemizle.Click += new System.EventHandler(this.btntemizle_Click);
             // 
             // msktarih
             // 
@@ -411,7 +418,6 @@
             this.Load += new System.EventHandler(this.FrmBankalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtfirma.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txttur.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtsube.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtbankaad.Properties)).EndInit();
@@ -419,6 +425,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -432,7 +439,6 @@
         private System.Windows.Forms.MaskedTextBox mskyetkili;
         private System.Windows.Forms.MaskedTextBox mskiban;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit txtfirma;
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
         private DevExpress.XtraEditors.SimpleButton Btnsil;
         private DevExpress.XtraEditors.SimpleButton Btnkaydet;
@@ -456,5 +462,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private System.Windows.Forms.MaskedTextBox mskhesap;
         private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
     }
 }
