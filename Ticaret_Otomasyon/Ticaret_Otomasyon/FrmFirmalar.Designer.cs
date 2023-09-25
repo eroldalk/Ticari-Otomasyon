@@ -242,7 +242,7 @@
             this.MskTC.Location = new System.Drawing.Point(87, 77);
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
-            this.MskTC.Size = new System.Drawing.Size(169, 26);
+            this.MskTC.Size = new System.Drawing.Size(224, 26);
             this.MskTC.TabIndex = 29;
             this.MskTC.ValidatingType = typeof(int);
             // 
@@ -252,7 +252,7 @@
             this.Msktel1.Location = new System.Drawing.Point(95, 32);
             this.Msktel1.Mask = "(999) 000-0000";
             this.Msktel1.Name = "Msktel1";
-            this.Msktel1.Size = new System.Drawing.Size(169, 26);
+            this.Msktel1.Size = new System.Drawing.Size(216, 26);
             this.Msktel1.TabIndex = 28;
             // 
             // labelControl10
@@ -281,7 +281,7 @@
             this.txtmail.Name = "txtmail";
             this.txtmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtmail.Properties.Appearance.Options.UseFont = true;
-            this.txtmail.Size = new System.Drawing.Size(170, 24);
+            this.txtmail.Size = new System.Drawing.Size(217, 24);
             this.txtmail.TabIndex = 11;
             // 
             // labelControl8
@@ -310,7 +310,7 @@
             this.txtsektor.Name = "txtsektor";
             this.txtsektor.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtsektor.Properties.Appearance.Options.UseFont = true;
-            this.txtsektor.Size = new System.Drawing.Size(169, 24);
+            this.txtsektor.Size = new System.Drawing.Size(224, 24);
             this.txtsektor.TabIndex = 6;
             // 
             // labelControl4
@@ -329,7 +329,7 @@
             this.txtad.Name = "txtad";
             this.txtad.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtad.Properties.Appearance.Options.UseFont = true;
-            this.txtad.Size = new System.Drawing.Size(169, 24);
+            this.txtad.Size = new System.Drawing.Size(224, 24);
             this.txtad.TabIndex = 4;
             // 
             // labelControl2
@@ -348,7 +348,7 @@
             this.Msktel2.Location = new System.Drawing.Point(95, 64);
             this.Msktel2.Mask = "(999) 000-0000";
             this.Msktel2.Name = "Msktel2";
-            this.Msktel2.Size = new System.Drawing.Size(169, 26);
+            this.Msktel2.Size = new System.Drawing.Size(216, 26);
             this.Msktel2.TabIndex = 2;
             // 
             // txtid
@@ -357,7 +357,7 @@
             this.txtid.Name = "txtid";
             this.txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtid.Properties.Appearance.Options.UseFont = true;
-            this.txtid.Size = new System.Drawing.Size(169, 24);
+            this.txtid.Size = new System.Drawing.Size(224, 24);
             this.txtid.TabIndex = 1;
             // 
             // labelControl1
@@ -423,10 +423,10 @@
             this.groupControl4.Controls.Add(this.Msktel1);
             this.groupControl4.Controls.Add(this.txtmail);
             this.groupControl4.Controls.Add(this.labelControl10);
-            this.groupControl4.Location = new System.Drawing.Point(10, 122);
+            this.groupControl4.Location = new System.Drawing.Point(10, 324);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.ShowCaption = false;
-            this.groupControl4.Size = new System.Drawing.Size(134, 94);
+            this.groupControl4.Size = new System.Drawing.Size(314, 696);
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "groupControl4";
             // 
@@ -446,7 +446,7 @@
             this.Mskfax.Location = new System.Drawing.Point(95, 128);
             this.Mskfax.Mask = "(999) 000-0000";
             this.Mskfax.Name = "Mskfax";
-            this.Mskfax.Size = new System.Drawing.Size(169, 26);
+            this.Mskfax.Size = new System.Drawing.Size(216, 26);
             this.Mskfax.TabIndex = 34;
             // 
             // labelControl14
@@ -465,7 +465,7 @@
             this.Msktel3.Location = new System.Drawing.Point(93, 96);
             this.Msktel3.Mask = "(999) 000-0000";
             this.Msktel3.Name = "Msktel3";
-            this.Msktel3.Size = new System.Drawing.Size(169, 26);
+            this.Msktel3.Size = new System.Drawing.Size(216, 26);
             this.Msktel3.TabIndex = 32;
             // 
             // groupControl2
@@ -480,7 +480,7 @@
             this.groupControl2.Location = new System.Drawing.Point(10, 10);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.ShowCaption = false;
-            this.groupControl2.Size = new System.Drawing.Size(130, 51);
+            this.groupControl2.Size = new System.Drawing.Size(314, 140);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "groupControl2";
             // 
@@ -493,10 +493,10 @@
             this.groupControl3.Controls.Add(this.txtyetkili);
             this.groupControl3.Controls.Add(this.labelControl13);
             this.groupControl3.Controls.Add(this.labelControl9);
-            this.groupControl3.Location = new System.Drawing.Point(10, 66);
+            this.groupControl3.Location = new System.Drawing.Point(10, 156);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.ShowCaption = false;
-            this.groupControl3.Size = new System.Drawing.Size(130, 53);
+            this.groupControl3.Size = new System.Drawing.Size(315, 162);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "groupControl3";
             // 
@@ -506,7 +506,7 @@
             this.txtgorev.Name = "txtgorev";
             this.txtgorev.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtgorev.Properties.Appearance.Options.UseFont = true;
-            this.txtgorev.Size = new System.Drawing.Size(169, 24);
+            this.txtgorev.Size = new System.Drawing.Size(224, 24);
             this.txtgorev.TabIndex = 10;
             // 
             // labelControl12
@@ -525,7 +525,7 @@
             this.txtyetkili.Name = "txtyetkili";
             this.txtyetkili.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtyetkili.Properties.Appearance.Options.UseFont = true;
-            this.txtyetkili.Size = new System.Drawing.Size(169, 24);
+            this.txtyetkili.Size = new System.Drawing.Size(224, 24);
             this.txtyetkili.TabIndex = 8;
             // 
             // labelControl13
@@ -601,9 +601,9 @@
             // groupControl7
             // 
             this.groupControl7.Controls.Add(this.xtraTabControl2);
-            this.groupControl7.Location = new System.Drawing.Point(32, 326);
+            this.groupControl7.Location = new System.Drawing.Point(6, 149);
             this.groupControl7.Name = "groupControl7";
-            this.groupControl7.Size = new System.Drawing.Size(1252, 1128);
+            this.groupControl7.Size = new System.Drawing.Size(318, 871);
             this.groupControl7.TabIndex = 1;
             this.groupControl7.Text = "Özel Kodlar ve Anlamları";
             // 
@@ -677,10 +677,10 @@
             this.groupControl6.Controls.Add(this.labelControl17);
             this.groupControl6.Controls.Add(this.txtkod3);
             this.groupControl6.Controls.Add(this.labelControl18);
-            this.groupControl6.Location = new System.Drawing.Point(8, 6);
+            this.groupControl6.Location = new System.Drawing.Point(8, 22);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.ShowCaption = false;
-            this.groupControl6.Size = new System.Drawing.Size(137, 61);
+            this.groupControl6.Size = new System.Drawing.Size(316, 121);
             this.groupControl6.TabIndex = 0;
             this.groupControl6.Text = "groupControl6";
             // 
@@ -690,7 +690,7 @@
             this.txtkod2.Name = "txtkod2";
             this.txtkod2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtkod2.Properties.Appearance.Options.UseFont = true;
-            this.txtkod2.Size = new System.Drawing.Size(169, 24);
+            this.txtkod2.Size = new System.Drawing.Size(212, 24);
             this.txtkod2.TabIndex = 10;
             // 
             // labelControl16
@@ -709,7 +709,7 @@
             this.txtkod1.Name = "txtkod1";
             this.txtkod1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtkod1.Properties.Appearance.Options.UseFont = true;
-            this.txtkod1.Size = new System.Drawing.Size(169, 24);
+            this.txtkod1.Size = new System.Drawing.Size(212, 24);
             this.txtkod1.TabIndex = 8;
             // 
             // labelControl17
@@ -728,7 +728,7 @@
             this.txtkod3.Name = "txtkod3";
             this.txtkod3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtkod3.Properties.Appearance.Options.UseFont = true;
-            this.txtkod3.Size = new System.Drawing.Size(169, 24);
+            this.txtkod3.Size = new System.Drawing.Size(212, 24);
             this.txtkod3.TabIndex = 12;
             // 
             // labelControl18

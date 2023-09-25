@@ -73,7 +73,7 @@ namespace Ticaret_Otomasyon
             txtkod1.Text = "";
             txtkod2.Text = "";
             txtkod3.Text = "";
-            txtad.Focus();
+            //txtad.Focus();
 
         }
 
