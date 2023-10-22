@@ -44,6 +44,8 @@
             this.BtnRehber = new DevExpress.XtraBars.BarButtonItem();
             this.BtnFaturalar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnAyarlar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnHareket = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnRapor = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
@@ -69,9 +71,11 @@
             this.BtnBankalar,
             this.BtnRehber,
             this.BtnFaturalar,
-            this.BtnAyarlar});
+            this.BtnAyarlar,
+            this.BtnHareket,
+            this.BtnRapor});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 14;
+            this.ribbonControl1.MaxItemId = 16;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -171,6 +175,7 @@
             this.BtnNotlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnNotlar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnNotlar.Name = "BtnNotlar";
+            this.BtnNotlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnNotlar_ItemClick);
             // 
             // BtnBankalar
             // 
@@ -215,6 +220,27 @@
             this.BtnAyarlar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnAyarlar.Name = "BtnAyarlar";
             // 
+            // BtnHareket
+            // 
+            this.BtnHareket.Caption = "HAREKETLER";
+            this.BtnHareket.Id = 14;
+            this.BtnHareket.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnHareket.ImageOptions.Image")));
+            this.BtnHareket.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnHareket.ImageOptions.LargeImage")));
+            this.BtnHareket.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnHareket.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnHareket.Name = "BtnHareket";
+            this.BtnHareket.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHareket_ItemClick);
+            // 
+            // BtnRapor
+            // 
+            this.BtnRapor.Caption = "RAPORLAR";
+            this.BtnRapor.Id = 15;
+            this.BtnRapor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnRapor.ImageOptions.Image")));
+            this.BtnRapor.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnRapor.ImageOptions.LargeImage")));
+            this.BtnRapor.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnRapor.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnRapor.Name = "BtnRapor";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -236,6 +262,8 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnBankalar);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnRehber);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnFaturalar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnHareket);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnRapor);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnAyarlar);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
@@ -279,6 +307,8 @@
         private DevExpress.XtraBars.BarButtonItem BtnFaturalar;
         private DevExpress.XtraBars.BarButtonItem BtnAyarlar;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem BtnHareket;
+        private DevExpress.XtraBars.BarButtonItem BtnRapor;
     }
 }
 

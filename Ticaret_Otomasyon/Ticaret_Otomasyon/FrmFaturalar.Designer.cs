@@ -78,8 +78,8 @@
             this.Txturunid = new DevExpress.XtraEditors.TextEdit();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtteden.Properties)).BeginInit();
@@ -109,8 +109,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl4
@@ -368,10 +368,10 @@
             this.groupControl5.Controls.Add(this.Btnkaydet);
             this.groupControl5.Controls.Add(this.labelControl5);
             this.groupControl5.Controls.Add(this.Txturunid);
-            this.groupControl5.Location = new System.Drawing.Point(16, 12);
+            this.groupControl5.Location = new System.Drawing.Point(32, 24);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.ShowCaption = false;
-            this.groupControl5.Size = new System.Drawing.Size(1312, 4044);
+            this.groupControl5.Size = new System.Drawing.Size(2624, 8088);
             this.groupControl5.TabIndex = 0;
             this.groupControl5.Text = "groupControl5";
             // 
@@ -635,6 +635,16 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(335, 1017);
             this.xtraTabPage1.Text = "Firma Bilgileri";
             // 
+            // gridView1
+            // 
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
+            // 
             // gridControl1
             // 
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
@@ -644,15 +654,6 @@
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.gridView1.Appearance.Row.Options.UseBackColor = true;
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // FrmFaturalar
             // 
@@ -698,8 +699,8 @@
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -733,8 +734,6 @@
         private DevExpress.XtraEditors.TextEdit Txturunid;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.TextEdit txtteden;
         private DevExpress.XtraEditors.TextEdit txtalici;
         private DevExpress.XtraEditors.TextEdit txtalan;
@@ -757,5 +756,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
     }
 }

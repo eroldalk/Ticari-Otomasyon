@@ -101,5 +101,26 @@ namespace Ticaret_Otomasyon
                 fr8.Show();
             }
         }
+        FrmNotlar fr9;
+        private void BtnNotlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr9 == null || fr9.IsDisposed)
+            {
+                fr9 = new FrmNotlar();
+                fr9.MdiParent = this;
+                fr9.Show();
+            }
+        }
+
+        FrmHareketler fr10;
+        private void BtnHareket_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr10 == null || fr10.IsDisposed)
+            {
+                fr10 = new FrmHareketler();
+                fr10.MdiParent = this;
+                fr10.Show();
+            }
+        }
     }
 }
