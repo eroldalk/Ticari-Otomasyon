@@ -111,3 +111,4 @@ C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmNotlar.resources
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmNotDetay.resources
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmHareketler.resources
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmAdmin.resources
