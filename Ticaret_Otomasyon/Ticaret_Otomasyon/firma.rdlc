@@ -1439,7 +1439,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Height>1.2cm</Height>
-        <Width>65.13479cm</Width>
+        <Width>65.13477cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1452,7 +1452,6 @@
       <Border>
         <Style>None</Style>
       </Border>
-      <BackgroundColor>Thistle</BackgroundColor>
     </Style>
   </Body>
   <Width>25.64362in</Width>

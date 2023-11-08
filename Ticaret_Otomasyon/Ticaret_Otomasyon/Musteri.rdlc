@@ -893,7 +893,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Height>1.2cm</Height>
-        <Width>36.33708cm</Width>
+        <Width>36.33712cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -906,10 +906,9 @@
       <Border>
         <Style>None</Style>
       </Border>
-      <BackgroundColor>Thistle</BackgroundColor>
     </Style>
   </Body>
-  <Width>14.30594in</Width>
+  <Width>14.30595in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
