@@ -24,7 +24,7 @@ namespace Ticaret_Otomasyon {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DboTicariOtomasyonDataSet : global::System.Data.DataSet {
         
-        private TBL_FIRMALARDataTable tableTBL_FIRMALAR;
+        private TBL_MUSTERILERDataTable tableTBL_MUSTERILER;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace Ticaret_Otomasyon {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["TBL_FIRMALAR"] != null)) {
-                    base.Tables.Add(new TBL_FIRMALARDataTable(ds.Tables["TBL_FIRMALAR"]));
+                if ((ds.Tables["TBL_MUSTERILER"] != null)) {
+                    base.Tables.Add(new TBL_MUSTERILERDataTable(ds.Tables["TBL_MUSTERILER"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Ticaret_Otomasyon {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public TBL_FIRMALARDataTable TBL_FIRMALAR {
+        public TBL_MUSTERILERDataTable TBL_MUSTERILER {
             get {
-                return this.tableTBL_FIRMALAR;
+                return this.tableTBL_MUSTERILER;
             }
         }
         
@@ -152,8 +152,8 @@ namespace Ticaret_Otomasyon {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["TBL_FIRMALAR"] != null)) {
-                    base.Tables.Add(new TBL_FIRMALARDataTable(ds.Tables["TBL_FIRMALAR"]));
+                if ((ds.Tables["TBL_MUSTERILER"] != null)) {
+                    base.Tables.Add(new TBL_MUSTERILERDataTable(ds.Tables["TBL_MUSTERILER"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Ticaret_Otomasyon {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableTBL_FIRMALAR = ((TBL_FIRMALARDataTable)(base.Tables["TBL_FIRMALAR"]));
+            this.tableTBL_MUSTERILER = ((TBL_MUSTERILERDataTable)(base.Tables["TBL_MUSTERILER"]));
             if ((initTable == true)) {
-                if ((this.tableTBL_FIRMALAR != null)) {
-                    this.tableTBL_FIRMALAR.InitVars();
+                if ((this.tableTBL_MUSTERILER != null)) {
+                    this.tableTBL_MUSTERILER.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace Ticaret_Otomasyon {
             this.Namespace = "http://tempuri.org/DboTicariOtomasyonDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableTBL_FIRMALAR = new TBL_FIRMALARDataTable();
-            base.Tables.Add(this.tableTBL_FIRMALAR);
+            this.tableTBL_MUSTERILER = new TBL_MUSTERILERDataTable();
+            base.Tables.Add(this.tableTBL_MUSTERILER);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeTBL_FIRMALAR() {
+        private bool ShouldSerializeTBL_MUSTERILER() {
             return false;
         }
         
@@ -270,55 +270,41 @@ namespace Ticaret_Otomasyon {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void TBL_FIRMALARRowChangeEventHandler(object sender, TBL_FIRMALARRowChangeEvent e);
+        public delegate void TBL_MUSTERILERRowChangeEventHandler(object sender, TBL_MUSTERILERRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class TBL_FIRMALARDataTable : global::System.Data.TypedTableBase<TBL_FIRMALARRow> {
+        public partial class TBL_MUSTERILERDataTable : global::System.Data.TypedTableBase<TBL_MUSTERILERRow> {
             
             private global::System.Data.DataColumn columnID;
             
             private global::System.Data.DataColumn columnAD;
             
-            private global::System.Data.DataColumn columnYETKİLİSTATU;
+            private global::System.Data.DataColumn columnSOYAD;
             
-            private global::System.Data.DataColumn columnYETKİLİADSOYAD;
-            
-            private global::System.Data.DataColumn columnYETKİLİTC;
-            
-            private global::System.Data.DataColumn columnSEKTOR;
-            
-            private global::System.Data.DataColumn columnTELEFON1;
+            private global::System.Data.DataColumn columnTELEFON;
             
             private global::System.Data.DataColumn columnTELEFON2;
             
-            private global::System.Data.DataColumn columnTELEFON3;
+            private global::System.Data.DataColumn columnTC;
             
             private global::System.Data.DataColumn columnMAİL;
-            
-            private global::System.Data.DataColumn columnFAX;
             
             private global::System.Data.DataColumn columnİL;
             
             private global::System.Data.DataColumn columnİLCE;
             
-            private global::System.Data.DataColumn columnVERGİDAİRE;
-            
             private global::System.Data.DataColumn columnADRES;
             
-            private global::System.Data.DataColumn columnOZELKOD1;
-            
-            private global::System.Data.DataColumn columnOZELKOD2;
-            
-            private global::System.Data.DataColumn columnOZELKOD3;
+            private global::System.Data.DataColumn columnVERGİDAİRE;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TBL_FIRMALARDataTable() {
-                this.TableName = "TBL_FIRMALAR";
+            public TBL_MUSTERILERDataTable() {
+                this.TableName = "TBL_MUSTERILER";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -326,7 +312,7 @@ namespace Ticaret_Otomasyon {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal TBL_FIRMALARDataTable(global::System.Data.DataTable table) {
+            internal TBL_MUSTERILERDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -343,7 +329,7 @@ namespace Ticaret_Otomasyon {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected TBL_FIRMALARDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected TBL_MUSTERILERDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -366,41 +352,17 @@ namespace Ticaret_Otomasyon {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn YETKİLİSTATUColumn {
+            public global::System.Data.DataColumn SOYADColumn {
                 get {
-                    return this.columnYETKİLİSTATU;
+                    return this.columnSOYAD;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn YETKİLİADSOYADColumn {
+            public global::System.Data.DataColumn TELEFONColumn {
                 get {
-                    return this.columnYETKİLİADSOYAD;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn YETKİLİTCColumn {
-                get {
-                    return this.columnYETKİLİTC;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SEKTORColumn {
-                get {
-                    return this.columnSEKTOR;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TELEFON1Column {
-                get {
-                    return this.columnTELEFON1;
+                    return this.columnTELEFON;
                 }
             }
             
@@ -414,9 +376,9 @@ namespace Ticaret_Otomasyon {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TELEFON3Column {
+            public global::System.Data.DataColumn TCColumn {
                 get {
-                    return this.columnTELEFON3;
+                    return this.columnTC;
                 }
             }
             
@@ -425,14 +387,6 @@ namespace Ticaret_Otomasyon {
             public global::System.Data.DataColumn MAİLColumn {
                 get {
                     return this.columnMAİL;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FAXColumn {
-                get {
-                    return this.columnFAX;
                 }
             }
             
@@ -454,14 +408,6 @@ namespace Ticaret_Otomasyon {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VERGİDAİREColumn {
-                get {
-                    return this.columnVERGİDAİRE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn ADRESColumn {
                 get {
                     return this.columnADRES;
@@ -470,25 +416,9 @@ namespace Ticaret_Otomasyon {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OZELKOD1Column {
+            public global::System.Data.DataColumn VERGİDAİREColumn {
                 get {
-                    return this.columnOZELKOD1;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OZELKOD2Column {
-                get {
-                    return this.columnOZELKOD2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OZELKOD3Column {
-                get {
-                    return this.columnOZELKOD3;
+                    return this.columnVERGİDAİRE;
                 }
             }
             
@@ -503,86 +433,55 @@ namespace Ticaret_Otomasyon {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TBL_FIRMALARRow this[int index] {
+            public TBL_MUSTERILERRow this[int index] {
                 get {
-                    return ((TBL_FIRMALARRow)(this.Rows[index]));
+                    return ((TBL_MUSTERILERRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TBL_FIRMALARRowChangeEventHandler TBL_FIRMALARRowChanging;
+            public event TBL_MUSTERILERRowChangeEventHandler TBL_MUSTERILERRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TBL_FIRMALARRowChangeEventHandler TBL_FIRMALARRowChanged;
+            public event TBL_MUSTERILERRowChangeEventHandler TBL_MUSTERILERRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TBL_FIRMALARRowChangeEventHandler TBL_FIRMALARRowDeleting;
+            public event TBL_MUSTERILERRowChangeEventHandler TBL_MUSTERILERRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event TBL_FIRMALARRowChangeEventHandler TBL_FIRMALARRowDeleted;
+            public event TBL_MUSTERILERRowChangeEventHandler TBL_MUSTERILERRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddTBL_FIRMALARRow(TBL_FIRMALARRow row) {
+            public void AddTBL_MUSTERILERRow(TBL_MUSTERILERRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TBL_FIRMALARRow AddTBL_FIRMALARRow(
-                        string AD, 
-                        string YETKİLİSTATU, 
-                        string YETKİLİADSOYAD, 
-                        string YETKİLİTC, 
-                        string SEKTOR, 
-                        string TELEFON1, 
-                        string TELEFON2, 
-                        string TELEFON3, 
-                        string MAİL, 
-                        string FAX, 
-                        string İL, 
-                        string İLCE, 
-                        string VERGİDAİRE, 
-                        string ADRES, 
-                        string OZELKOD1, 
-                        string OZELKOD2, 
-                        string OZELKOD3) {
-                TBL_FIRMALARRow rowTBL_FIRMALARRow = ((TBL_FIRMALARRow)(this.NewRow()));
+            public TBL_MUSTERILERRow AddTBL_MUSTERILERRow(string AD, string SOYAD, string TELEFON, string TELEFON2, string TC, string MAİL, string İL, string İLCE, string ADRES, string VERGİDAİRE) {
+                TBL_MUSTERILERRow rowTBL_MUSTERILERRow = ((TBL_MUSTERILERRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         AD,
-                        YETKİLİSTATU,
-                        YETKİLİADSOYAD,
-                        YETKİLİTC,
-                        SEKTOR,
-                        TELEFON1,
+                        SOYAD,
+                        TELEFON,
                         TELEFON2,
-                        TELEFON3,
+                        TC,
                         MAİL,
-                        FAX,
                         İL,
                         İLCE,
-                        VERGİDAİRE,
                         ADRES,
-                        OZELKOD1,
-                        OZELKOD2,
-                        OZELKOD3};
-                rowTBL_FIRMALARRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowTBL_FIRMALARRow);
-                return rowTBL_FIRMALARRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TBL_FIRMALARRow FindByID(short ID) {
-                return ((TBL_FIRMALARRow)(this.Rows.Find(new object[] {
-                            ID})));
+                        VERGİDAİRE};
+                rowTBL_MUSTERILERRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTBL_MUSTERILERRow);
+                return rowTBL_MUSTERILERRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                TBL_FIRMALARDataTable cln = ((TBL_FIRMALARDataTable)(base.Clone()));
+                TBL_MUSTERILERDataTable cln = ((TBL_MUSTERILERDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -590,7 +489,7 @@ namespace Ticaret_Otomasyon {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new TBL_FIRMALARDataTable();
+                return new TBL_MUSTERILERDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -598,22 +497,15 @@ namespace Ticaret_Otomasyon {
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
                 this.columnAD = base.Columns["AD"];
-                this.columnYETKİLİSTATU = base.Columns["YETKİLİSTATU"];
-                this.columnYETKİLİADSOYAD = base.Columns["YETKİLİADSOYAD"];
-                this.columnYETKİLİTC = base.Columns["YETKİLİTC"];
-                this.columnSEKTOR = base.Columns["SEKTOR"];
-                this.columnTELEFON1 = base.Columns["TELEFON1"];
+                this.columnSOYAD = base.Columns["SOYAD"];
+                this.columnTELEFON = base.Columns["TELEFON"];
                 this.columnTELEFON2 = base.Columns["TELEFON2"];
-                this.columnTELEFON3 = base.Columns["TELEFON3"];
+                this.columnTC = base.Columns["TC"];
                 this.columnMAİL = base.Columns["MAİL"];
-                this.columnFAX = base.Columns["FAX"];
                 this.columnİL = base.Columns["İL"];
                 this.columnİLCE = base.Columns["İLCE"];
-                this.columnVERGİDAİRE = base.Columns["VERGİDAİRE"];
                 this.columnADRES = base.Columns["ADRES"];
-                this.columnOZELKOD1 = base.Columns["OZELKOD1"];
-                this.columnOZELKOD2 = base.Columns["OZELKOD2"];
-                this.columnOZELKOD3 = base.Columns["OZELKOD3"];
+                this.columnVERGİDAİRE = base.Columns["VERGİDAİRE"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -623,89 +515,65 @@ namespace Ticaret_Otomasyon {
                 base.Columns.Add(this.columnID);
                 this.columnAD = new global::System.Data.DataColumn("AD", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAD);
-                this.columnYETKİLİSTATU = new global::System.Data.DataColumn("YETKİLİSTATU", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnYETKİLİSTATU);
-                this.columnYETKİLİADSOYAD = new global::System.Data.DataColumn("YETKİLİADSOYAD", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnYETKİLİADSOYAD);
-                this.columnYETKİLİTC = new global::System.Data.DataColumn("YETKİLİTC", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnYETKİLİTC);
-                this.columnSEKTOR = new global::System.Data.DataColumn("SEKTOR", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSEKTOR);
-                this.columnTELEFON1 = new global::System.Data.DataColumn("TELEFON1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTELEFON1);
+                this.columnSOYAD = new global::System.Data.DataColumn("SOYAD", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSOYAD);
+                this.columnTELEFON = new global::System.Data.DataColumn("TELEFON", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTELEFON);
                 this.columnTELEFON2 = new global::System.Data.DataColumn("TELEFON2", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTELEFON2);
-                this.columnTELEFON3 = new global::System.Data.DataColumn("TELEFON3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTELEFON3);
+                this.columnTC = new global::System.Data.DataColumn("TC", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTC);
                 this.columnMAİL = new global::System.Data.DataColumn("MAİL", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMAİL);
-                this.columnFAX = new global::System.Data.DataColumn("FAX", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFAX);
                 this.columnİL = new global::System.Data.DataColumn("İL", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnİL);
                 this.columnİLCE = new global::System.Data.DataColumn("İLCE", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnİLCE);
-                this.columnVERGİDAİRE = new global::System.Data.DataColumn("VERGİDAİRE", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVERGİDAİRE);
                 this.columnADRES = new global::System.Data.DataColumn("ADRES", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnADRES);
-                this.columnOZELKOD1 = new global::System.Data.DataColumn("OZELKOD1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOZELKOD1);
-                this.columnOZELKOD2 = new global::System.Data.DataColumn("OZELKOD2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOZELKOD2);
-                this.columnOZELKOD3 = new global::System.Data.DataColumn("OZELKOD3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOZELKOD3);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnID}, true));
+                this.columnVERGİDAİRE = new global::System.Data.DataColumn("VERGİDAİRE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVERGİDAİRE);
                 this.columnID.AutoIncrement = true;
                 this.columnID.AutoIncrementSeed = -1;
                 this.columnID.AutoIncrementStep = -1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.ReadOnly = true;
-                this.columnID.Unique = true;
-                this.columnAD.MaxLength = 30;
-                this.columnYETKİLİSTATU.MaxLength = 30;
-                this.columnYETKİLİADSOYAD.MaxLength = 30;
-                this.columnYETKİLİTC.MaxLength = 11;
-                this.columnSEKTOR.MaxLength = 15;
-                this.columnTELEFON1.MaxLength = 11;
-                this.columnTELEFON2.MaxLength = 11;
-                this.columnTELEFON3.MaxLength = 11;
+                this.columnAD.MaxLength = 20;
+                this.columnSOYAD.MaxLength = 30;
+                this.columnTELEFON.MaxLength = 15;
+                this.columnTELEFON2.MaxLength = 15;
+                this.columnTC.MaxLength = 11;
                 this.columnMAİL.MaxLength = 40;
-                this.columnFAX.MaxLength = 15;
-                this.columnİL.MaxLength = 13;
+                this.columnİL.MaxLength = 20;
                 this.columnİLCE.MaxLength = 20;
-                this.columnVERGİDAİRE.MaxLength = 30;
                 this.columnADRES.MaxLength = 100;
-                this.columnOZELKOD1.MaxLength = 15;
-                this.columnOZELKOD2.MaxLength = 15;
-                this.columnOZELKOD3.MaxLength = 15;
+                this.columnVERGİDAİRE.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TBL_FIRMALARRow NewTBL_FIRMALARRow() {
-                return ((TBL_FIRMALARRow)(this.NewRow()));
+            public TBL_MUSTERILERRow NewTBL_MUSTERILERRow() {
+                return ((TBL_MUSTERILERRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new TBL_FIRMALARRow(builder);
+                return new TBL_MUSTERILERRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(TBL_FIRMALARRow);
+                return typeof(TBL_MUSTERILERRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.TBL_FIRMALARRowChanged != null)) {
-                    this.TBL_FIRMALARRowChanged(this, new TBL_FIRMALARRowChangeEvent(((TBL_FIRMALARRow)(e.Row)), e.Action));
+                if ((this.TBL_MUSTERILERRowChanged != null)) {
+                    this.TBL_MUSTERILERRowChanged(this, new TBL_MUSTERILERRowChangeEvent(((TBL_MUSTERILERRow)(e.Row)), e.Action));
                 }
             }
             
@@ -713,8 +581,8 @@ namespace Ticaret_Otomasyon {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.TBL_FIRMALARRowChanging != null)) {
-                    this.TBL_FIRMALARRowChanging(this, new TBL_FIRMALARRowChangeEvent(((TBL_FIRMALARRow)(e.Row)), e.Action));
+                if ((this.TBL_MUSTERILERRowChanging != null)) {
+                    this.TBL_MUSTERILERRowChanging(this, new TBL_MUSTERILERRowChangeEvent(((TBL_MUSTERILERRow)(e.Row)), e.Action));
                 }
             }
             
@@ -722,8 +590,8 @@ namespace Ticaret_Otomasyon {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.TBL_FIRMALARRowDeleted != null)) {
-                    this.TBL_FIRMALARRowDeleted(this, new TBL_FIRMALARRowChangeEvent(((TBL_FIRMALARRow)(e.Row)), e.Action));
+                if ((this.TBL_MUSTERILERRowDeleted != null)) {
+                    this.TBL_MUSTERILERRowDeleted(this, new TBL_MUSTERILERRowChangeEvent(((TBL_MUSTERILERRow)(e.Row)), e.Action));
                 }
             }
             
@@ -731,14 +599,14 @@ namespace Ticaret_Otomasyon {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.TBL_FIRMALARRowDeleting != null)) {
-                    this.TBL_FIRMALARRowDeleting(this, new TBL_FIRMALARRowChangeEvent(((TBL_FIRMALARRow)(e.Row)), e.Action));
+                if ((this.TBL_MUSTERILERRowDeleting != null)) {
+                    this.TBL_MUSTERILERRowDeleting(this, new TBL_MUSTERILERRowChangeEvent(((TBL_MUSTERILERRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveTBL_FIRMALARRow(TBL_FIRMALARRow row) {
+            public void RemoveTBL_MUSTERILERRow(TBL_MUSTERILERRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -765,7 +633,7 @@ namespace Ticaret_Otomasyon {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "TBL_FIRMALARDataTable";
+                attribute2.FixedValue = "TBL_MUSTERILERDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -809,25 +677,25 @@ namespace Ticaret_Otomasyon {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class TBL_FIRMALARRow : global::System.Data.DataRow {
+        public partial class TBL_MUSTERILERRow : global::System.Data.DataRow {
             
-            private TBL_FIRMALARDataTable tableTBL_FIRMALAR;
+            private TBL_MUSTERILERDataTable tableTBL_MUSTERILER;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal TBL_FIRMALARRow(global::System.Data.DataRowBuilder rb) : 
+            internal TBL_MUSTERILERRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableTBL_FIRMALAR = ((TBL_FIRMALARDataTable)(this.Table));
+                this.tableTBL_MUSTERILER = ((TBL_MUSTERILERDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public short ID {
                 get {
-                    return ((short)(this[this.tableTBL_FIRMALAR.IDColumn]));
+                    return ((short)(this[this.tableTBL_MUSTERILER.IDColumn]));
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.IDColumn] = value;
+                    this[this.tableTBL_MUSTERILER.IDColumn] = value;
                 }
             }
             
@@ -836,94 +704,46 @@ namespace Ticaret_Otomasyon {
             public string AD {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.ADColumn]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.ADColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'AD\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'AD\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.ADColumn] = value;
+                    this[this.tableTBL_MUSTERILER.ADColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string YETKİLİSTATU {
+            public string SOYAD {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.YETKİLİSTATUColumn]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.SOYADColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'YETKİLİSTATU\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SOYAD\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.YETKİLİSTATUColumn] = value;
+                    this[this.tableTBL_MUSTERILER.SOYADColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string YETKİLİADSOYAD {
+            public string TELEFON {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.YETKİLİADSOYADColumn]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.TELEFONColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'YETKİLİADSOYAD\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TELEFON\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.YETKİLİADSOYADColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string YETKİLİTC {
-                get {
-                    try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.YETKİLİTCColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'YETKİLİTC\' in table \'TBL_FIRMALAR\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTBL_FIRMALAR.YETKİLİTCColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string SEKTOR {
-                get {
-                    try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.SEKTORColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SEKTOR\' in table \'TBL_FIRMALAR\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTBL_FIRMALAR.SEKTORColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string TELEFON1 {
-                get {
-                    try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.TELEFON1Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TELEFON1\' in table \'TBL_FIRMALAR\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTBL_FIRMALAR.TELEFON1Column] = value;
+                    this[this.tableTBL_MUSTERILER.TELEFONColumn] = value;
                 }
             }
             
@@ -932,30 +752,30 @@ namespace Ticaret_Otomasyon {
             public string TELEFON2 {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.TELEFON2Column]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.TELEFON2Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TELEFON2\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TELEFON2\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.TELEFON2Column] = value;
+                    this[this.tableTBL_MUSTERILER.TELEFON2Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string TELEFON3 {
+            public string TC {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.TELEFON3Column]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.TCColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TELEFON3\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TC\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.TELEFON3Column] = value;
+                    this[this.tableTBL_MUSTERILER.TCColumn] = value;
                 }
             }
             
@@ -964,30 +784,14 @@ namespace Ticaret_Otomasyon {
             public string MAİL {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.MAİLColumn]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.MAİLColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MAİL\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'MAİL\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.MAİLColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string FAX {
-                get {
-                    try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.FAXColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FAX\' in table \'TBL_FIRMALAR\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTBL_FIRMALAR.FAXColumn] = value;
+                    this[this.tableTBL_MUSTERILER.MAİLColumn] = value;
                 }
             }
             
@@ -996,14 +800,14 @@ namespace Ticaret_Otomasyon {
             public string İL {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.İLColumn]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.İLColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'İL\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'İL\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.İLColumn] = value;
+                    this[this.tableTBL_MUSTERILER.İLColumn] = value;
                 }
             }
             
@@ -1012,30 +816,14 @@ namespace Ticaret_Otomasyon {
             public string İLCE {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.İLCEColumn]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.İLCEColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'İLCE\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'İLCE\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.İLCEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string VERGİDAİRE {
-                get {
-                    try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.VERGİDAİREColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'VERGİDAİRE\' in table \'TBL_FIRMALAR\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTBL_FIRMALAR.VERGİDAİREColumn] = value;
+                    this[this.tableTBL_MUSTERILER.İLCEColumn] = value;
                 }
             }
             
@@ -1044,267 +832,151 @@ namespace Ticaret_Otomasyon {
             public string ADRES {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.ADRESColumn]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.ADRESColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ADRES\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ADRES\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.ADRESColumn] = value;
+                    this[this.tableTBL_MUSTERILER.ADRESColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OZELKOD1 {
+            public string VERGİDAİRE {
                 get {
                     try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.OZELKOD1Column]));
+                        return ((string)(this[this.tableTBL_MUSTERILER.VERGİDAİREColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OZELKOD1\' in table \'TBL_FIRMALAR\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'VERGİDAİRE\' in table \'TBL_MUSTERILER\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableTBL_FIRMALAR.OZELKOD1Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OZELKOD2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.OZELKOD2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OZELKOD2\' in table \'TBL_FIRMALAR\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTBL_FIRMALAR.OZELKOD2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OZELKOD3 {
-                get {
-                    try {
-                        return ((string)(this[this.tableTBL_FIRMALAR.OZELKOD3Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OZELKOD3\' in table \'TBL_FIRMALAR\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTBL_FIRMALAR.OZELKOD3Column] = value;
+                    this[this.tableTBL_MUSTERILER.VERGİDAİREColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsADNull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.ADColumn);
+                return this.IsNull(this.tableTBL_MUSTERILER.ADColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetADNull() {
-                this[this.tableTBL_FIRMALAR.ADColumn] = global::System.Convert.DBNull;
+                this[this.tableTBL_MUSTERILER.ADColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsYETKİLİSTATUNull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.YETKİLİSTATUColumn);
+            public bool IsSOYADNull() {
+                return this.IsNull(this.tableTBL_MUSTERILER.SOYADColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetYETKİLİSTATUNull() {
-                this[this.tableTBL_FIRMALAR.YETKİLİSTATUColumn] = global::System.Convert.DBNull;
+            public void SetSOYADNull() {
+                this[this.tableTBL_MUSTERILER.SOYADColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsYETKİLİADSOYADNull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.YETKİLİADSOYADColumn);
+            public bool IsTELEFONNull() {
+                return this.IsNull(this.tableTBL_MUSTERILER.TELEFONColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetYETKİLİADSOYADNull() {
-                this[this.tableTBL_FIRMALAR.YETKİLİADSOYADColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsYETKİLİTCNull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.YETKİLİTCColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetYETKİLİTCNull() {
-                this[this.tableTBL_FIRMALAR.YETKİLİTCColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsSEKTORNull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.SEKTORColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetSEKTORNull() {
-                this[this.tableTBL_FIRMALAR.SEKTORColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTELEFON1Null() {
-                return this.IsNull(this.tableTBL_FIRMALAR.TELEFON1Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTELEFON1Null() {
-                this[this.tableTBL_FIRMALAR.TELEFON1Column] = global::System.Convert.DBNull;
+            public void SetTELEFONNull() {
+                this[this.tableTBL_MUSTERILER.TELEFONColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTELEFON2Null() {
-                return this.IsNull(this.tableTBL_FIRMALAR.TELEFON2Column);
+                return this.IsNull(this.tableTBL_MUSTERILER.TELEFON2Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTELEFON2Null() {
-                this[this.tableTBL_FIRMALAR.TELEFON2Column] = global::System.Convert.DBNull;
+                this[this.tableTBL_MUSTERILER.TELEFON2Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTELEFON3Null() {
-                return this.IsNull(this.tableTBL_FIRMALAR.TELEFON3Column);
+            public bool IsTCNull() {
+                return this.IsNull(this.tableTBL_MUSTERILER.TCColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTELEFON3Null() {
-                this[this.tableTBL_FIRMALAR.TELEFON3Column] = global::System.Convert.DBNull;
+            public void SetTCNull() {
+                this[this.tableTBL_MUSTERILER.TCColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsMAİLNull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.MAİLColumn);
+                return this.IsNull(this.tableTBL_MUSTERILER.MAİLColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetMAİLNull() {
-                this[this.tableTBL_FIRMALAR.MAİLColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsFAXNull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.FAXColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetFAXNull() {
-                this[this.tableTBL_FIRMALAR.FAXColumn] = global::System.Convert.DBNull;
+                this[this.tableTBL_MUSTERILER.MAİLColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsİLNull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.İLColumn);
+                return this.IsNull(this.tableTBL_MUSTERILER.İLColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetİLNull() {
-                this[this.tableTBL_FIRMALAR.İLColumn] = global::System.Convert.DBNull;
+                this[this.tableTBL_MUSTERILER.İLColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsİLCENull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.İLCEColumn);
+                return this.IsNull(this.tableTBL_MUSTERILER.İLCEColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetİLCENull() {
-                this[this.tableTBL_FIRMALAR.İLCEColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVERGİDAİRENull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.VERGİDAİREColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVERGİDAİRENull() {
-                this[this.tableTBL_FIRMALAR.VERGİDAİREColumn] = global::System.Convert.DBNull;
+                this[this.tableTBL_MUSTERILER.İLCEColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsADRESNull() {
-                return this.IsNull(this.tableTBL_FIRMALAR.ADRESColumn);
+                return this.IsNull(this.tableTBL_MUSTERILER.ADRESColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetADRESNull() {
-                this[this.tableTBL_FIRMALAR.ADRESColumn] = global::System.Convert.DBNull;
+                this[this.tableTBL_MUSTERILER.ADRESColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOZELKOD1Null() {
-                return this.IsNull(this.tableTBL_FIRMALAR.OZELKOD1Column);
+            public bool IsVERGİDAİRENull() {
+                return this.IsNull(this.tableTBL_MUSTERILER.VERGİDAİREColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOZELKOD1Null() {
-                this[this.tableTBL_FIRMALAR.OZELKOD1Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOZELKOD2Null() {
-                return this.IsNull(this.tableTBL_FIRMALAR.OZELKOD2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOZELKOD2Null() {
-                this[this.tableTBL_FIRMALAR.OZELKOD2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOZELKOD3Null() {
-                return this.IsNull(this.tableTBL_FIRMALAR.OZELKOD3Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOZELKOD3Null() {
-                this[this.tableTBL_FIRMALAR.OZELKOD3Column] = global::System.Convert.DBNull;
+            public void SetVERGİDAİRENull() {
+                this[this.tableTBL_MUSTERILER.VERGİDAİREColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1312,22 +984,22 @@ namespace Ticaret_Otomasyon {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class TBL_FIRMALARRowChangeEvent : global::System.EventArgs {
+        public class TBL_MUSTERILERRowChangeEvent : global::System.EventArgs {
             
-            private TBL_FIRMALARRow eventRow;
+            private TBL_MUSTERILERRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TBL_FIRMALARRowChangeEvent(TBL_FIRMALARRow row, global::System.Data.DataRowAction action) {
+            public TBL_MUSTERILERRowChangeEvent(TBL_MUSTERILERRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public TBL_FIRMALARRow Row {
+            public TBL_MUSTERILERRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1355,7 +1027,7 @@ namespace Ticaret_Otomasyon.DboTicariOtomasyonDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class TBL_FIRMALARTableAdapter : global::System.ComponentModel.Component {
+    public partial class TBL_MUSTERILERTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1369,7 +1041,7 @@ namespace Ticaret_Otomasyon.DboTicariOtomasyonDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public TBL_FIRMALARTableAdapter() {
+        public TBL_MUSTERILERTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1466,187 +1138,35 @@ namespace Ticaret_Otomasyon.DboTicariOtomasyonDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "TBL_FIRMALAR";
+            tableMapping.DataSetTable = "TBL_MUSTERILER";
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("AD", "AD");
-            tableMapping.ColumnMappings.Add("YETKİLİSTATU", "YETKİLİSTATU");
-            tableMapping.ColumnMappings.Add("YETKİLİADSOYAD", "YETKİLİADSOYAD");
-            tableMapping.ColumnMappings.Add("YETKİLİTC", "YETKİLİTC");
-            tableMapping.ColumnMappings.Add("SEKTOR", "SEKTOR");
-            tableMapping.ColumnMappings.Add("TELEFON1", "TELEFON1");
+            tableMapping.ColumnMappings.Add("SOYAD", "SOYAD");
+            tableMapping.ColumnMappings.Add("TELEFON", "TELEFON");
             tableMapping.ColumnMappings.Add("TELEFON2", "TELEFON2");
-            tableMapping.ColumnMappings.Add("TELEFON3", "TELEFON3");
+            tableMapping.ColumnMappings.Add("TC", "TC");
             tableMapping.ColumnMappings.Add("MAİL", "MAİL");
-            tableMapping.ColumnMappings.Add("FAX", "FAX");
             tableMapping.ColumnMappings.Add("İL", "İL");
             tableMapping.ColumnMappings.Add("İLCE", "İLCE");
-            tableMapping.ColumnMappings.Add("VERGİDAİRE", "VERGİDAİRE");
             tableMapping.ColumnMappings.Add("ADRES", "ADRES");
-            tableMapping.ColumnMappings.Add("OZELKOD1", "OZELKOD1");
-            tableMapping.ColumnMappings.Add("OZELKOD2", "OZELKOD2");
-            tableMapping.ColumnMappings.Add("OZELKOD3", "OZELKOD3");
+            tableMapping.ColumnMappings.Add("VERGİDAİRE", "VERGİDAİRE");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[TBL_FIRMALAR] WHERE (([ID] = @Original_ID) AND ((@IsNull_AD = " +
-                "1 AND [AD] IS NULL) OR ([AD] = @Original_AD)) AND ((@IsNull_YETKİLİSTATU = 1 AND" +
-                " [YETKİLİSTATU] IS NULL) OR ([YETKİLİSTATU] = @Original_YETKİLİSTATU)) AND ((@Is" +
-                "Null_YETKİLİADSOYAD = 1 AND [YETKİLİADSOYAD] IS NULL) OR ([YETKİLİADSOYAD] = @Or" +
-                "iginal_YETKİLİADSOYAD)) AND ((@IsNull_YETKİLİTC = 1 AND [YETKİLİTC] IS NULL) OR " +
-                "([YETKİLİTC] = @Original_YETKİLİTC)) AND ((@IsNull_SEKTOR = 1 AND [SEKTOR] IS NU" +
-                "LL) OR ([SEKTOR] = @Original_SEKTOR)) AND ((@IsNull_TELEFON1 = 1 AND [TELEFON1] " +
-                "IS NULL) OR ([TELEFON1] = @Original_TELEFON1)) AND ((@IsNull_TELEFON2 = 1 AND [T" +
-                "ELEFON2] IS NULL) OR ([TELEFON2] = @Original_TELEFON2)) AND ((@IsNull_TELEFON3 =" +
-                " 1 AND [TELEFON3] IS NULL) OR ([TELEFON3] = @Original_TELEFON3)) AND ((@IsNull_M" +
-                "AİL = 1 AND [MAİL] IS NULL) OR ([MAİL] = @Original_MAİL)) AND ((@IsNull_FAX = 1 " +
-                "AND [FAX] IS NULL) OR ([FAX] = @Original_FAX)) AND ((@IsNull_İL = 1 AND [İL] IS " +
-                "NULL) OR ([İL] = @Original_İL)) AND ((@IsNull_İLCE = 1 AND [İLCE] IS NULL) OR ([" +
-                "İLCE] = @Original_İLCE)) AND ((@IsNull_VERGİDAİRE = 1 AND [VERGİDAİRE] IS NULL) " +
-                "OR ([VERGİDAİRE] = @Original_VERGİDAİRE)) AND ((@IsNull_ADRES = 1 AND [ADRES] IS" +
-                " NULL) OR ([ADRES] = @Original_ADRES)) AND ((@IsNull_OZELKOD1 = 1 AND [OZELKOD1]" +
-                " IS NULL) OR ([OZELKOD1] = @Original_OZELKOD1)) AND ((@IsNull_OZELKOD2 = 1 AND [" +
-                "OZELKOD2] IS NULL) OR ([OZELKOD2] = @Original_OZELKOD2)) AND ((@IsNull_OZELKOD3 " +
-                "= 1 AND [OZELKOD3] IS NULL) OR ([OZELKOD3] = @Original_OZELKOD3)))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_YETKİLİSTATU", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİSTATU", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_YETKİLİSTATU", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİSTATU", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_YETKİLİADSOYAD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİADSOYAD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_YETKİLİADSOYAD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİADSOYAD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_YETKİLİTC", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİTC", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_YETKİLİTC", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİTC", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SEKTOR", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SEKTOR", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SEKTOR", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SEKTOR", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TELEFON1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON1", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TELEFON1", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TELEFON2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON2", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TELEFON2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TELEFON3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON3", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TELEFON3", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_MAİL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MAİL", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MAİL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MAİL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FAX", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FAX", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FAX", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FAX", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_İL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İL", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_İLCE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İLCE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İLCE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İLCE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VERGİDAİRE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VERGİDAİRE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VERGİDAİRE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VERGİDAİRE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ADRES", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ADRES", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ADRES", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ADRES", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OZELKOD1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD1", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OZELKOD1", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OZELKOD2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD2", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OZELKOD2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OZELKOD3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD3", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OZELKOD3", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[TBL_FIRMALAR] ([AD], [YETKİLİSTATU], [YETKİLİADSOYAD], [YETKİLİTC], [SEKTOR], [TELEFON1], [TELEFON2], [TELEFON3], [MAİL], [FAX], [İL], [İLCE], [VERGİDAİRE], [ADRES], [OZELKOD1], [OZELKOD2], [OZELKOD3]) VALUES (@AD, @YETKİLİSTATU, @YETKİLİADSOYAD, @YETKİLİTC, @SEKTOR, @TELEFON1, @TELEFON2, @TELEFON3, @MAİL, @FAX, @İL, @İLCE, @VERGİDAİRE, @ADRES, @OZELKOD1, @OZELKOD2, @OZELKOD3);
-SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, TELEFON2, TELEFON3, MAİL, FAX, İL, İLCE, VERGİDAİRE, ADRES, OZELKOD1, OZELKOD2, OZELKOD3 FROM TBL_FIRMALAR WHERE (ID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[TBL_MUSTERILER] ([AD], [SOYAD], [TELEFON], [TELEFON2], [TC], [" +
+                "MAİL], [İL], [İLCE], [ADRES], [VERGİDAİRE]) VALUES (@AD, @SOYAD, @TELEFON, @TELE" +
+                "FON2, @TC, @MAİL, @İL, @İLCE, @ADRES, @VERGİDAİRE)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YETKİLİSTATU", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİSTATU", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YETKİLİADSOYAD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİADSOYAD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YETKİLİTC", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİTC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SEKTOR", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SEKTOR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFON1", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SOYAD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SOYAD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFON", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFON2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFON3", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TC", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MAİL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MAİL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FAX", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FAX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İLCE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İLCE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VERGİDAİRE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VERGİDAİRE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ADRES", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ADRES", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OZELKOD1", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OZELKOD2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OZELKOD3", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[TBL_FIRMALAR] SET [AD] = @AD, [YETKİLİSTATU] = @YETKİLİSTATU, [YETK" +
-                "İLİADSOYAD] = @YETKİLİADSOYAD, [YETKİLİTC] = @YETKİLİTC, [SEKTOR] = @SEKTOR, [TE" +
-                "LEFON1] = @TELEFON1, [TELEFON2] = @TELEFON2, [TELEFON3] = @TELEFON3, [MAİL] = @M" +
-                "AİL, [FAX] = @FAX, [İL] = @İL, [İLCE] = @İLCE, [VERGİDAİRE] = @VERGİDAİRE, [ADRE" +
-                "S] = @ADRES, [OZELKOD1] = @OZELKOD1, [OZELKOD2] = @OZELKOD2, [OZELKOD3] = @OZELK" +
-                "OD3 WHERE (([ID] = @Original_ID) AND ((@IsNull_AD = 1 AND [AD] IS NULL) OR ([AD]" +
-                " = @Original_AD)) AND ((@IsNull_YETKİLİSTATU = 1 AND [YETKİLİSTATU] IS NULL) OR " +
-                "([YETKİLİSTATU] = @Original_YETKİLİSTATU)) AND ((@IsNull_YETKİLİADSOYAD = 1 AND " +
-                "[YETKİLİADSOYAD] IS NULL) OR ([YETKİLİADSOYAD] = @Original_YETKİLİADSOYAD)) AND " +
-                "((@IsNull_YETKİLİTC = 1 AND [YETKİLİTC] IS NULL) OR ([YETKİLİTC] = @Original_YET" +
-                "KİLİTC)) AND ((@IsNull_SEKTOR = 1 AND [SEKTOR] IS NULL) OR ([SEKTOR] = @Original" +
-                "_SEKTOR)) AND ((@IsNull_TELEFON1 = 1 AND [TELEFON1] IS NULL) OR ([TELEFON1] = @O" +
-                "riginal_TELEFON1)) AND ((@IsNull_TELEFON2 = 1 AND [TELEFON2] IS NULL) OR ([TELEF" +
-                "ON2] = @Original_TELEFON2)) AND ((@IsNull_TELEFON3 = 1 AND [TELEFON3] IS NULL) O" +
-                "R ([TELEFON3] = @Original_TELEFON3)) AND ((@IsNull_MAİL = 1 AND [MAİL] IS NULL) " +
-                "OR ([MAİL] = @Original_MAİL)) AND ((@IsNull_FAX = 1 AND [FAX] IS NULL) OR ([FAX]" +
-                " = @Original_FAX)) AND ((@IsNull_İL = 1 AND [İL] IS NULL) OR ([İL] = @Original_İ" +
-                "L)) AND ((@IsNull_İLCE = 1 AND [İLCE] IS NULL) OR ([İLCE] = @Original_İLCE)) AND" +
-                " ((@IsNull_VERGİDAİRE = 1 AND [VERGİDAİRE] IS NULL) OR ([VERGİDAİRE] = @Original" +
-                "_VERGİDAİRE)) AND ((@IsNull_ADRES = 1 AND [ADRES] IS NULL) OR ([ADRES] = @Origin" +
-                "al_ADRES)) AND ((@IsNull_OZELKOD1 = 1 AND [OZELKOD1] IS NULL) OR ([OZELKOD1] = @" +
-                "Original_OZELKOD1)) AND ((@IsNull_OZELKOD2 = 1 AND [OZELKOD2] IS NULL) OR ([OZEL" +
-                "KOD2] = @Original_OZELKOD2)) AND ((@IsNull_OZELKOD3 = 1 AND [OZELKOD3] IS NULL) " +
-                "OR ([OZELKOD3] = @Original_OZELKOD3)));\r\nSELECT ID, AD, YETKİLİSTATU, YETKİLİADS" +
-                "OYAD, YETKİLİTC, SEKTOR, TELEFON1, TELEFON2, TELEFON3, MAİL, FAX, İL, İLCE, VERG" +
-                "İDAİRE, ADRES, OZELKOD1, OZELKOD2, OZELKOD3 FROM TBL_FIRMALAR WHERE (ID = @ID)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YETKİLİSTATU", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİSTATU", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YETKİLİADSOYAD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİADSOYAD", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@YETKİLİTC", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİTC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SEKTOR", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SEKTOR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFON1", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFON2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TELEFON3", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MAİL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MAİL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FAX", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FAX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İLCE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İLCE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VERGİDAİRE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VERGİDAİRE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ADRES", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ADRES", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OZELKOD1", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OZELKOD2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OZELKOD3", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.SmallInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_AD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_AD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_YETKİLİSTATU", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİSTATU", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_YETKİLİSTATU", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİSTATU", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_YETKİLİADSOYAD", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİADSOYAD", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_YETKİLİADSOYAD", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİADSOYAD", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_YETKİLİTC", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİTC", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_YETKİLİTC", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "YETKİLİTC", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SEKTOR", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SEKTOR", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SEKTOR", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SEKTOR", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TELEFON1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON1", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TELEFON1", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TELEFON2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON2", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TELEFON2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_TELEFON3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON3", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TELEFON3", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TELEFON3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_MAİL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MAİL", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MAİL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MAİL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_FAX", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FAX", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FAX", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FAX", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_İL", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İL", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İL", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İL", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_İLCE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İLCE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İLCE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İLCE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_VERGİDAİRE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VERGİDAİRE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_VERGİDAİRE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VERGİDAİRE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ADRES", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ADRES", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ADRES", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ADRES", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OZELKOD1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD1", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OZELKOD1", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OZELKOD2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD2", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OZELKOD2", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OZELKOD3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD3", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OZELKOD3", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OZELKOD3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.SmallInt, 2, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VERGİDAİRE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VERGİDAİRE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1662,9 +1182,8 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, TELEFON" +
-                "2, TELEFON3, MAİL, FAX, İL, İLCE, VERGİDAİRE, ADRES, OZELKOD1, OZELKOD2, OZELKOD" +
-                "3 FROM dbo.TBL_FIRMALAR";
+            this._commandCollection[0].CommandText = "SELECT ID, AD, SOYAD, TELEFON, TELEFON2, TC, MAİL, İL, İLCE, ADRES, VERGİDAİRE FR" +
+                "OM dbo.TBL_MUSTERILER";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1672,7 +1191,7 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DboTicariOtomasyonDataSet.TBL_FIRMALARDataTable dataTable) {
+        public virtual int Fill(DboTicariOtomasyonDataSet.TBL_MUSTERILERDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1685,9 +1204,9 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DboTicariOtomasyonDataSet.TBL_FIRMALARDataTable GetData() {
+        public virtual DboTicariOtomasyonDataSet.TBL_MUSTERILERDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DboTicariOtomasyonDataSet.TBL_FIRMALARDataTable dataTable = new DboTicariOtomasyonDataSet.TBL_FIRMALARDataTable();
+            DboTicariOtomasyonDataSet.TBL_MUSTERILERDataTable dataTable = new DboTicariOtomasyonDataSet.TBL_MUSTERILERDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1695,7 +1214,7 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DboTicariOtomasyonDataSet.TBL_FIRMALARDataTable dataTable) {
+        public virtual int Update(DboTicariOtomasyonDataSet.TBL_MUSTERILERDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -1703,7 +1222,7 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DboTicariOtomasyonDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "TBL_FIRMALAR");
+            return this.Adapter.Update(dataSet, "TBL_MUSTERILER");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1724,302 +1243,67 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(
-                    short Original_ID, 
-                    string Original_AD, 
-                    string Original_YETKİLİSTATU, 
-                    string Original_YETKİLİADSOYAD, 
-                    string Original_YETKİLİTC, 
-                    string Original_SEKTOR, 
-                    string Original_TELEFON1, 
-                    string Original_TELEFON2, 
-                    string Original_TELEFON3, 
-                    string Original_MAİL, 
-                    string Original_FAX, 
-                    string Original_İL, 
-                    string Original_İLCE, 
-                    string Original_VERGİDAİRE, 
-                    string Original_ADRES, 
-                    string Original_OZELKOD1, 
-                    string Original_OZELKOD2, 
-                    string Original_OZELKOD3) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((short)(Original_ID));
-            if ((Original_AD == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_AD));
-            }
-            if ((Original_YETKİLİSTATU == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_YETKİLİSTATU));
-            }
-            if ((Original_YETKİLİADSOYAD == null)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_YETKİLİADSOYAD));
-            }
-            if ((Original_YETKİLİTC == null)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_YETKİLİTC));
-            }
-            if ((Original_SEKTOR == null)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_SEKTOR));
-            }
-            if ((Original_TELEFON1 == null)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_TELEFON1));
-            }
-            if ((Original_TELEFON2 == null)) {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_TELEFON2));
-            }
-            if ((Original_TELEFON3 == null)) {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_TELEFON3));
-            }
-            if ((Original_MAİL == null)) {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_MAİL));
-            }
-            if ((Original_FAX == null)) {
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_FAX));
-            }
-            if ((Original_İL == null)) {
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((string)(Original_İL));
-            }
-            if ((Original_İLCE == null)) {
-                this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[24].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[24].Value = ((string)(Original_İLCE));
-            }
-            if ((Original_VERGİDAİRE == null)) {
-                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[26].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[26].Value = ((string)(Original_VERGİDAİRE));
-            }
-            if ((Original_ADRES == null)) {
-                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[28].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[28].Value = ((string)(Original_ADRES));
-            }
-            if ((Original_OZELKOD1 == null)) {
-                this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[30].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[30].Value = ((string)(Original_OZELKOD1));
-            }
-            if ((Original_OZELKOD2 == null)) {
-                this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[32].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[32].Value = ((string)(Original_OZELKOD2));
-            }
-            if ((Original_OZELKOD3 == null)) {
-                this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[34].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[34].Value = ((string)(Original_OZELKOD3));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(
-                    string AD, 
-                    string YETKİLİSTATU, 
-                    string YETKİLİADSOYAD, 
-                    string YETKİLİTC, 
-                    string SEKTOR, 
-                    string TELEFON1, 
-                    string TELEFON2, 
-                    string TELEFON3, 
-                    string MAİL, 
-                    string FAX, 
-                    string İL, 
-                    string İLCE, 
-                    string VERGİDAİRE, 
-                    string ADRES, 
-                    string OZELKOD1, 
-                    string OZELKOD2, 
-                    string OZELKOD3) {
+        public virtual int Insert(string AD, string SOYAD, string TELEFON, string TELEFON2, string TC, string MAİL, string İL, string İLCE, string ADRES, string VERGİDAİRE) {
             if ((AD == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(AD));
             }
-            if ((YETKİLİSTATU == null)) {
+            if ((SOYAD == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(YETKİLİSTATU));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(SOYAD));
             }
-            if ((YETKİLİADSOYAD == null)) {
+            if ((TELEFON == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(YETKİLİADSOYAD));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(TELEFON));
             }
-            if ((YETKİLİTC == null)) {
+            if ((TELEFON2 == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(YETKİLİTC));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(TELEFON2));
             }
-            if ((SEKTOR == null)) {
+            if ((TC == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(SEKTOR));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(TC));
             }
-            if ((TELEFON1 == null)) {
+            if ((MAİL == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(TELEFON1));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(MAİL));
             }
-            if ((TELEFON2 == null)) {
+            if ((İL == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(TELEFON2));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(İL));
             }
-            if ((TELEFON3 == null)) {
+            if ((İLCE == null)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(TELEFON3));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(İLCE));
             }
-            if ((MAİL == null)) {
+            if ((ADRES == null)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(MAİL));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(ADRES));
             }
-            if ((FAX == null)) {
+            if ((VERGİDAİRE == null)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(FAX));
-            }
-            if ((İL == null)) {
-                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(İL));
-            }
-            if ((İLCE == null)) {
-                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(İLCE));
-            }
-            if ((VERGİDAİRE == null)) {
-                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(VERGİDAİRE));
-            }
-            if ((ADRES == null)) {
-                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(ADRES));
-            }
-            if ((OZELKOD1 == null)) {
-                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(OZELKOD1));
-            }
-            if ((OZELKOD2 == null)) {
-                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(OZELKOD2));
-            }
-            if ((OZELKOD3 == null)) {
-                this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[16].Value = ((string)(OZELKOD3));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(VERGİDAİRE));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2036,346 +1320,6 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
                 }
             }
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    string AD, 
-                    string YETKİLİSTATU, 
-                    string YETKİLİADSOYAD, 
-                    string YETKİLİTC, 
-                    string SEKTOR, 
-                    string TELEFON1, 
-                    string TELEFON2, 
-                    string TELEFON3, 
-                    string MAİL, 
-                    string FAX, 
-                    string İL, 
-                    string İLCE, 
-                    string VERGİDAİRE, 
-                    string ADRES, 
-                    string OZELKOD1, 
-                    string OZELKOD2, 
-                    string OZELKOD3, 
-                    short Original_ID, 
-                    string Original_AD, 
-                    string Original_YETKİLİSTATU, 
-                    string Original_YETKİLİADSOYAD, 
-                    string Original_YETKİLİTC, 
-                    string Original_SEKTOR, 
-                    string Original_TELEFON1, 
-                    string Original_TELEFON2, 
-                    string Original_TELEFON3, 
-                    string Original_MAİL, 
-                    string Original_FAX, 
-                    string Original_İL, 
-                    string Original_İLCE, 
-                    string Original_VERGİDAİRE, 
-                    string Original_ADRES, 
-                    string Original_OZELKOD1, 
-                    string Original_OZELKOD2, 
-                    string Original_OZELKOD3, 
-                    short ID) {
-            if ((AD == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(AD));
-            }
-            if ((YETKİLİSTATU == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(YETKİLİSTATU));
-            }
-            if ((YETKİLİADSOYAD == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(YETKİLİADSOYAD));
-            }
-            if ((YETKİLİTC == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(YETKİLİTC));
-            }
-            if ((SEKTOR == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(SEKTOR));
-            }
-            if ((TELEFON1 == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(TELEFON1));
-            }
-            if ((TELEFON2 == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(TELEFON2));
-            }
-            if ((TELEFON3 == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(TELEFON3));
-            }
-            if ((MAİL == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(MAİL));
-            }
-            if ((FAX == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(FAX));
-            }
-            if ((İL == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(İL));
-            }
-            if ((İLCE == null)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(İLCE));
-            }
-            if ((VERGİDAİRE == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(VERGİDAİRE));
-            }
-            if ((ADRES == null)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(ADRES));
-            }
-            if ((OZELKOD1 == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(OZELKOD1));
-            }
-            if ((OZELKOD2 == null)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(OZELKOD2));
-            }
-            if ((OZELKOD3 == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(OZELKOD3));
-            }
-            this.Adapter.UpdateCommand.Parameters[17].Value = ((short)(Original_ID));
-            if ((Original_AD == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_AD));
-            }
-            if ((Original_YETKİLİSTATU == null)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_YETKİLİSTATU));
-            }
-            if ((Original_YETKİLİADSOYAD == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_YETKİLİADSOYAD));
-            }
-            if ((Original_YETKİLİTC == null)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_YETKİLİTC));
-            }
-            if ((Original_SEKTOR == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_SEKTOR));
-            }
-            if ((Original_TELEFON1 == null)) {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_TELEFON1));
-            }
-            if ((Original_TELEFON2 == null)) {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_TELEFON2));
-            }
-            if ((Original_TELEFON3 == null)) {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_TELEFON3));
-            }
-            if ((Original_MAİL == null)) {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_MAİL));
-            }
-            if ((Original_FAX == null)) {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original_FAX));
-            }
-            if ((Original_İL == null)) {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[39].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((string)(Original_İL));
-            }
-            if ((Original_İLCE == null)) {
-                this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[41].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[41].Value = ((string)(Original_İLCE));
-            }
-            if ((Original_VERGİDAİRE == null)) {
-                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[43].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[43].Value = ((string)(Original_VERGİDAİRE));
-            }
-            if ((Original_ADRES == null)) {
-                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[45].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[45].Value = ((string)(Original_ADRES));
-            }
-            if ((Original_OZELKOD1 == null)) {
-                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[47].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[47].Value = ((string)(Original_OZELKOD1));
-            }
-            if ((Original_OZELKOD2 == null)) {
-                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[49].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[49].Value = ((string)(Original_OZELKOD2));
-            }
-            if ((Original_OZELKOD3 == null)) {
-                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[51].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[51].Value = ((string)(Original_OZELKOD3));
-            }
-            this.Adapter.UpdateCommand.Parameters[52].Value = ((short)(ID));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    string AD, 
-                    string YETKİLİSTATU, 
-                    string YETKİLİADSOYAD, 
-                    string YETKİLİTC, 
-                    string SEKTOR, 
-                    string TELEFON1, 
-                    string TELEFON2, 
-                    string TELEFON3, 
-                    string MAİL, 
-                    string FAX, 
-                    string İL, 
-                    string İLCE, 
-                    string VERGİDAİRE, 
-                    string ADRES, 
-                    string OZELKOD1, 
-                    string OZELKOD2, 
-                    string OZELKOD3, 
-                    short Original_ID, 
-                    string Original_AD, 
-                    string Original_YETKİLİSTATU, 
-                    string Original_YETKİLİADSOYAD, 
-                    string Original_YETKİLİTC, 
-                    string Original_SEKTOR, 
-                    string Original_TELEFON1, 
-                    string Original_TELEFON2, 
-                    string Original_TELEFON3, 
-                    string Original_MAİL, 
-                    string Original_FAX, 
-                    string Original_İL, 
-                    string Original_İLCE, 
-                    string Original_VERGİDAİRE, 
-                    string Original_ADRES, 
-                    string Original_OZELKOD1, 
-                    string Original_OZELKOD2, 
-                    string Original_OZELKOD3) {
-            return this.Update(AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, TELEFON2, TELEFON3, MAİL, FAX, İL, İLCE, VERGİDAİRE, ADRES, OZELKOD1, OZELKOD2, OZELKOD3, Original_ID, Original_AD, Original_YETKİLİSTATU, Original_YETKİLİADSOYAD, Original_YETKİLİTC, Original_SEKTOR, Original_TELEFON1, Original_TELEFON2, Original_TELEFON3, Original_MAİL, Original_FAX, Original_İL, Original_İLCE, Original_VERGİDAİRE, Original_ADRES, Original_OZELKOD1, Original_OZELKOD2, Original_OZELKOD3, Original_ID);
-        }
     }
     
     /// <summary>
@@ -2390,7 +1334,7 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         
         private UpdateOrderOption _updateOrder;
         
-        private TBL_FIRMALARTableAdapter _tBL_FIRMALARTableAdapter;
+        private TBL_MUSTERILERTableAdapter _tBL_MUSTERILERTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -2412,12 +1356,12 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public TBL_FIRMALARTableAdapter TBL_FIRMALARTableAdapter {
+        public TBL_MUSTERILERTableAdapter TBL_MUSTERILERTableAdapter {
             get {
-                return this._tBL_FIRMALARTableAdapter;
+                return this._tBL_MUSTERILERTableAdapter;
             }
             set {
-                this._tBL_FIRMALARTableAdapter = value;
+                this._tBL_MUSTERILERTableAdapter = value;
             }
         }
         
@@ -2440,9 +1384,9 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._tBL_FIRMALARTableAdapter != null) 
-                            && (this._tBL_FIRMALARTableAdapter.Connection != null))) {
-                    return this._tBL_FIRMALARTableAdapter.Connection;
+                if (((this._tBL_MUSTERILERTableAdapter != null) 
+                            && (this._tBL_MUSTERILERTableAdapter.Connection != null))) {
+                    return this._tBL_MUSTERILERTableAdapter.Connection;
                 }
                 return null;
             }
@@ -2457,7 +1401,7 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._tBL_FIRMALARTableAdapter != null)) {
+                if ((this._tBL_MUSTERILERTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -2471,12 +1415,12 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateUpdatedRows(DboTicariOtomasyonDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tBL_FIRMALARTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.TBL_FIRMALAR.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._tBL_MUSTERILERTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TBL_MUSTERILER.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tBL_FIRMALARTableAdapter.Update(updatedRows));
+                    result = (result + this._tBL_MUSTERILERTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -2490,11 +1434,11 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateInsertedRows(DboTicariOtomasyonDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tBL_FIRMALARTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.TBL_FIRMALAR.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._tBL_MUSTERILERTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TBL_MUSTERILER.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tBL_FIRMALARTableAdapter.Update(addedRows));
+                    result = (result + this._tBL_MUSTERILERTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -2508,11 +1452,11 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(DboTicariOtomasyonDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._tBL_FIRMALARTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.TBL_FIRMALAR.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tBL_MUSTERILERTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.TBL_MUSTERILER.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tBL_FIRMALARTableAdapter.Update(deletedRows));
+                    result = (result + this._tBL_MUSTERILERTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -2555,8 +1499,8 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._tBL_FIRMALARTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tBL_FIRMALARTableAdapter.Connection) == false))) {
+            if (((this._tBL_MUSTERILERTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tBL_MUSTERILERTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -2592,13 +1536,13 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._tBL_FIRMALARTableAdapter != null)) {
-                    revertConnections.Add(this._tBL_FIRMALARTableAdapter, this._tBL_FIRMALARTableAdapter.Connection);
-                    this._tBL_FIRMALARTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._tBL_FIRMALARTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._tBL_FIRMALARTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tBL_FIRMALARTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tBL_FIRMALARTableAdapter.Adapter);
+                if ((this._tBL_MUSTERILERTableAdapter != null)) {
+                    revertConnections.Add(this._tBL_MUSTERILERTableAdapter, this._tBL_MUSTERILERTableAdapter.Connection);
+                    this._tBL_MUSTERILERTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tBL_MUSTERILERTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tBL_MUSTERILERTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tBL_MUSTERILERTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tBL_MUSTERILERTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -2659,9 +1603,9 @@ SELECT ID, AD, YETKİLİSTATU, YETKİLİADSOYAD, YETKİLİTC, SEKTOR, TELEFON1, 
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._tBL_FIRMALARTableAdapter != null)) {
-                    this._tBL_FIRMALARTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tBL_FIRMALARTableAdapter]));
-                    this._tBL_FIRMALARTableAdapter.Transaction = null;
+                if ((this._tBL_MUSTERILERTableAdapter != null)) {
+                    this._tBL_MUSTERILERTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tBL_MUSTERILERTableAdapter]));
+                    this._tBL_MUSTERILERTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

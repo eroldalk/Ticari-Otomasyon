@@ -28,18 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRaporlar));
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
-            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.reportViewer3 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             this.reportViewer4 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
             this.reportViewer5 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.DboTicariOtomasyonDataSet = new Ticaret_Otomasyon.DboTicariOtomasyonDataSet();
+            this.TBL_MUSTERILERBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.TBL_MUSTERILERTableAdapter = new Ticaret_Otomasyon.DboTicariOtomasyonDataSetTableAdapters.TBL_MUSTERILERTableAdapter();
+            this.DboTicariOtomasyonDataSet1 = new Ticaret_Otomasyon.DboTicariOtomasyonDataSet1();
+            this.TBL_FIRMALARBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.TBL_FIRMALARTableAdapter = new Ticaret_Otomasyon.DboTicariOtomasyonDataSet1TableAdapters.TBL_FIRMALARTableAdapter();
             this.xtraTabPage1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
@@ -47,6 +56,10 @@
             this.xtraTabPage3.SuspendLayout();
             this.xtraTabPage4.SuspendLayout();
             this.xtraTabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DboTicariOtomasyonDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_MUSTERILERBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DboTicariOtomasyonDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_FIRMALARBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // xtraTabPage1
@@ -57,6 +70,19 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(1922, 1017);
             this.xtraTabPage1.Text = "Müşteri Raporları";
             // 
+            // reportViewer2
+            // 
+            this.reportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.TBL_MUSTERILERBindingSource;
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer2.LocalReport.ReportEmbeddedResource = "Ticaret_Otomasyon.Musteri.rdlc";
+            this.reportViewer2.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer2.Name = "reportViewer2";
+            this.reportViewer2.ServerReport.BearerToken = null;
+            this.reportViewer2.Size = new System.Drawing.Size(1922, 1017);
+            this.reportViewer2.TabIndex = 2;
+            // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.reportViewer1);
@@ -64,6 +90,19 @@
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1922, 1017);
             this.xtraTabPage2.Text = "Firma Raporları";
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.TBL_FIRMALARBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Ticaret_Otomasyon.firma.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(1922, 1017);
+            this.reportViewer1.TabIndex = 3;
             // 
             // xtraTabControl1
             // 
@@ -88,31 +127,6 @@
             this.xtraTabPage3.Size = new System.Drawing.Size(1922, 1017);
             this.xtraTabPage3.Text = "Kasa Raporları";
             // 
-            // xtraTabPage4
-            // 
-            this.xtraTabPage4.Controls.Add(this.reportViewer4);
-            this.xtraTabPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage4.ImageOptions.Image")));
-            this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(1922, 1017);
-            this.xtraTabPage4.Text = "Gider Raporları";
-            // 
-            // xtraTabPage5
-            // 
-            this.xtraTabPage5.Controls.Add(this.reportViewer5);
-            this.xtraTabPage5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage5.ImageOptions.Image")));
-            this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(1922, 1017);
-            this.xtraTabPage5.Text = "Personel Raporları";
-            // 
-            // reportViewer2
-            // 
-            this.reportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer2.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer2.Name = "reportViewer2";
-            this.reportViewer2.ServerReport.BearerToken = null;
-            this.reportViewer2.Size = new System.Drawing.Size(1922, 1017);
-            this.reportViewer2.TabIndex = 2;
-            // 
             // reportViewer3
             // 
             this.reportViewer3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -121,6 +135,14 @@
             this.reportViewer3.ServerReport.BearerToken = null;
             this.reportViewer3.Size = new System.Drawing.Size(1922, 1017);
             this.reportViewer3.TabIndex = 2;
+            // 
+            // xtraTabPage4
+            // 
+            this.xtraTabPage4.Controls.Add(this.reportViewer4);
+            this.xtraTabPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage4.ImageOptions.Image")));
+            this.xtraTabPage4.Name = "xtraTabPage4";
+            this.xtraTabPage4.Size = new System.Drawing.Size(1922, 1017);
+            this.xtraTabPage4.Text = "Gider Raporları";
             // 
             // reportViewer4
             // 
@@ -131,6 +153,14 @@
             this.reportViewer4.Size = new System.Drawing.Size(1922, 1017);
             this.reportViewer4.TabIndex = 2;
             // 
+            // xtraTabPage5
+            // 
+            this.xtraTabPage5.Controls.Add(this.reportViewer5);
+            this.xtraTabPage5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage5.ImageOptions.Image")));
+            this.xtraTabPage5.Name = "xtraTabPage5";
+            this.xtraTabPage5.Size = new System.Drawing.Size(1922, 1017);
+            this.xtraTabPage5.Text = "Personel Raporları";
+            // 
             // reportViewer5
             // 
             this.reportViewer5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -140,14 +170,33 @@
             this.reportViewer5.Size = new System.Drawing.Size(1922, 1017);
             this.reportViewer5.TabIndex = 2;
             // 
-            // reportViewer1
+            // DboTicariOtomasyonDataSet
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1922, 1017);
-            this.reportViewer1.TabIndex = 3;
+            this.DboTicariOtomasyonDataSet.DataSetName = "DboTicariOtomasyonDataSet";
+            this.DboTicariOtomasyonDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // TBL_MUSTERILERBindingSource
+            // 
+            this.TBL_MUSTERILERBindingSource.DataMember = "TBL_MUSTERILER";
+            this.TBL_MUSTERILERBindingSource.DataSource = this.DboTicariOtomasyonDataSet;
+            // 
+            // TBL_MUSTERILERTableAdapter
+            // 
+            this.TBL_MUSTERILERTableAdapter.ClearBeforeFill = true;
+            // 
+            // DboTicariOtomasyonDataSet1
+            // 
+            this.DboTicariOtomasyonDataSet1.DataSetName = "DboTicariOtomasyonDataSet1";
+            this.DboTicariOtomasyonDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // TBL_FIRMALARBindingSource
+            // 
+            this.TBL_FIRMALARBindingSource.DataMember = "TBL_FIRMALAR";
+            this.TBL_FIRMALARBindingSource.DataSource = this.DboTicariOtomasyonDataSet1;
+            // 
+            // TBL_FIRMALARTableAdapter
+            // 
+            this.TBL_FIRMALARTableAdapter.ClearBeforeFill = true;
             // 
             // FrmRaporlar
             // 
@@ -165,6 +214,10 @@
             this.xtraTabPage3.ResumeLayout(false);
             this.xtraTabPage4.ResumeLayout(false);
             this.xtraTabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DboTicariOtomasyonDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_MUSTERILERBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DboTicariOtomasyonDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBL_FIRMALARBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,5 +235,11 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer4;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer5;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource TBL_MUSTERILERBindingSource;
+        private DboTicariOtomasyonDataSet DboTicariOtomasyonDataSet;
+        private DboTicariOtomasyonDataSetTableAdapters.TBL_MUSTERILERTableAdapter TBL_MUSTERILERTableAdapter;
+        private System.Windows.Forms.BindingSource TBL_FIRMALARBindingSource;
+        private DboTicariOtomasyonDataSet1 DboTicariOtomasyonDataSet1;
+        private DboTicariOtomasyonDataSet1TableAdapters.TBL_FIRMALARTableAdapter TBL_FIRMALARTableAdapter;
     }
 }

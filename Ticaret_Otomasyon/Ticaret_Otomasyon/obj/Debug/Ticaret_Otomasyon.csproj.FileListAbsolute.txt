@@ -112,10 +112,6 @@ C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmNotDetay.resources
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmHareketler.resources
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmAdmin.resources
-C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\SqlServerTypes\x64\msvcr120.dll
-C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
-C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\SqlServerTypes\x86\msvcr120.dll
-C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\Microsoft.ReportViewer.Common.dll
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\Microsoft.ReportViewer.Design.dll
@@ -165,3 +161,15 @@ C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmRaporlar.resources
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\x86\SqlServerSpatial160.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\x64\SqlServerSpatial160.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
