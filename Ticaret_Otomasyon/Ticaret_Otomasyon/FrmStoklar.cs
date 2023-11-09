@@ -25,14 +25,37 @@ namespace Ticaret_Otomasyon
         {
          
 
-            chartControl2.Series["Series 2"].Points.AddPoint("istanbul", 16);
-            chartControl2.Series["Series 2"].Points.AddPoint("İzmir", 6);
-            chartControl2.Series["Series 2"].Points.AddPoint("Ankara", 6);
-            chartControl2.Series["Series 2"].Points.AddPoint("Adana", 5);
+           
 
 
-            SqlDataAdapter da = new SqlDataAdapter("Select UrunAd");
-          
+            SqlDataAdapter da = new SqlDataAdapter("Select UrunAd,Sum(adet) As 'Miktar' from TBL_URUNLER group by UrunAd" , bgl.baglanti());
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            gridControl1.DataSource = dt;
+
+            //charta stok miktarı listeleme
+
+            SqlCommand cmd = new SqlCommand("Select UrunAd,Sum(adet) As 'Miktar' from TBL_URUNLER group by UrunAd", bgl.baglanti());
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                chartControl1.Series["Series 1"].Points.AddPoint(Convert.ToString(dr[0]), int.Parse(dr[1].ToString()));
+            }
+            bgl.baglanti().Close();
+
+            //iller
+
+            SqlCommand cmd2 = new SqlCommand("Select İL,Count(*) from TBL_FIRMALAR Group by İL", bgl.baglanti());
+            SqlDataReader dr2 = cmd2.ExecuteReader();
+            while (dr2.Read())
+            {
+                chartControl2.Series["Series 2"].Points.AddPoint(Convert.ToString(dr2[0]), int.Parse(dr2[1].ToString()));
+            }
+            bgl.baglanti().Close();
+
+
+
+
         }
     }
 }

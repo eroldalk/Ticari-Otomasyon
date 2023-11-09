@@ -221,3 +221,4 @@ C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\es\DevExpress.Xpo.v22.1.resources.dll
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\bin\Debug\ja\DevExpress.Xpo.v22.1.resources.dll
 C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmStoklar.resources
+C:\Users\Lenovo\Desktop\Ticari-Otomasyon\Ticaret_Otomasyon\Ticaret_Otomasyon\obj\Debug\Ticaret_Otomasyon.FrmAyarlar.resources

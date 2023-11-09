@@ -145,5 +145,15 @@ namespace Ticaret_Otomasyon
                 fr12.Show();
             }
         }
+
+        FrmAyarlar fr13;
+        private void BtnAyarlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fr13 == null || fr13.IsDisposed)
+            {
+                fr13 = new FrmAyarlar();
+                fr13.Show();
+            }
+        }
     }
 }
